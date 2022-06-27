@@ -1,0 +1,59 @@
+<%- include('../includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/list.css">
+    <link rel="stylesheet" href="/css/auth.css">
+</head>
+
+<body>
+   <%- include('../includes/navigation.ejs') %>
+
+    <main>
+        <form action="/delete" method="POST">
+            <table>
+                <tr>
+                    <th></th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Address</th>
+                    <th>Post Code</th>
+                    <th>Phone Number</th>
+                    <th>Email</th>
+                    <th>Username</th>
+                    <th></th>
+                </tr>
+                <% if (users.length > 0) { %>
+                    <% for (let user of users) { %>
+                        <tr>
+                            <td><input type="checkbox" name="ids" value="<%= user.id %>" /></td>
+                            <td><%= user.firstName %></td>
+                            <td><%= user.lastName %></td>
+                            <td><%= user.address %></td>
+                            <td><%= user.postCode %></td>
+                            <td><%= user.phoneNumber %></td>
+                            <td><%= user.email %></td>
+                            <td><%= user.username %></td>
+                            <td>
+                                <a class="btn btn-primary" href="/edit/<%= user.id %>">
+                                    Amend
+                                </a>
+                            </td>
+                        </tr>
+                    <% } %>
+                <% } else { %>
+                    <tr>
+                        <td>No Users Found!</td>
+                    </tr>
+                <% } %>
+            </table>
+            <div class="action">
+                <a class="btn btn-primary" href="/add">
+                    Add
+                </a>
+                <button type="submit" class="btn btn-danger">
+                    Delete
+                </button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
