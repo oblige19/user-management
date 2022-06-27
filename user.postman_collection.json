@@ -1,0 +1,247 @@
+{
+	"info": {
+		"_postman_id": "8e0c5c7f-87e2-465a-ab1d-6ce8bb42a57d",
+		"name": "user",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11429689"
+	},
+	"item": [
+		{
+			"name": "add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "firstName",
+							"value": "firstName",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "lastName",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "address",
+							"type": "text"
+						},
+						{
+							"key": "postCode",
+							"value": "4024",
+							"type": "text"
+						},
+						{
+							"key": "phoneNumber",
+							"value": "9876",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "a@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "adm",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "adm",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/add",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "firstName",
+							"value": "firstName",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "lastName",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "address",
+							"type": "text"
+						},
+						{
+							"key": "postCode",
+							"value": "4024",
+							"type": "text"
+						},
+						{
+							"key": "phoneNumber",
+							"value": "9876",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "a@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "adm",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "adm",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/add",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/edit/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"edit",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/logout",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "ids",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "ids",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/delete",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
